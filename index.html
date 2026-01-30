@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário, Jefferson!</title>
+    <style>
+        body {
+            background-color: #17191c; /* Arch Dark Grey */
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .terminal-header {
+            color: #1793d1; /* Arch Blue */
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px #000;
+        }
+
+        .highlight {
+            color: #1793d1;
+            font-weight: bold;
+        }
+
+        .image-container {
+            border: 3px solid #1793d1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(23, 147, 209, 0.4);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .footer-msg {
+            margin-top: 20px;
+            background: #24292e;
+            padding: 15px;
+            border-left: 5px solid #1793d1;
+            font-style: italic;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background-color: #1793d1;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="terminal-header">
+        Parabéns Jefferson,<br>
+        <span class="highlight">Ao</span> Nosso especialista Linux <span class="cursor"></span>
+    </div>
+
+    <div class="image-container">
+        <img src="img\parabens.png" alt="Festa no Server Room">
+    </div>
+
+    <div class="footer-msg">
+        [jefferson@archlinux ~]$ sudo pacman -S felicidades --noconfirm
+    </div>
+
+</body>
+</html>
